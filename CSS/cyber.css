@@ -1,0 +1,588 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'lobstar';
+}
+
+.frst{
+height: fit-content;
+background-image: url(/pics/colors.jpg);
+background-size: cover;
+margin-bottom: 80px ;
+}
+.header{
+    width:  -webkit-fill-available ;
+    display: flex;
+    justify-content: center ;
+    background-color: transparent;
+    background-color: #081b295b;
+    position: fixed;
+    z-index: 100;
+}
+.title{
+    width: 50%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    color: orange;
+    font-size: 18px;
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+    border-bottom: 4px aqua solid;
+    border-top: 1px aqua solid;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.title:hover{
+    background-color: aqua;
+    color: aqua ;
+    text-shadow: 2px 2px 2px orange;
+}
+.title::before{
+    content: '';
+    border: 30px solid;
+    border-color: aqua transparent transparent transparent;
+    position: relative;
+    bottom: -145px;
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center ;
+    background-color: transparent;
+    position: fixed;
+   
+}
+
+.header .logo img{
+ border-radius: 100%;
+cursor: pointer;
+ transition: 0.5s;
+ opacity: 0.7;
+}
+.links {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:nowrap;
+}
+li{
+    list-style: none;
+    position: relative;
+}
+.links li a{
+    font-size: 25px ;
+    text-decoration: none;
+    color: orange;
+    transition: 0.6s;
+}
+.links li a:first-child(){
+color: aqua;
+}
+.logo:active {
+    scale: 1.1;
+}
+.links a:hover{
+    color: aqua;
+    cursor: pointer;
+}
+.home{
+    height: fit-content;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto 0 auto ;
+}
+.home-content{
+    height: 450px ;
+    margin-top: 100px ;
+    width: 40%;
+}
+.home-content h1{
+    font-size: 50px ;
+    color: aqua;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.home-content h2{
+    margin-bottom: 20px ;
+    font-size: 45px;
+    text-align: center;
+    color: wheat;
+}
+.home-content p{
+    font-size: 27px;
+    text-align: center;
+    color: aliceblue;
+}
+.home .home-img{
+    width: 60%;
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+    height: fit-content;
+    margin-bottom: 20px ;
+    margin-top: 85px;
+}
+.home .home-img img{
+    width:  400px;
+    height: 400px ;
+    border-radius: 100%;
+    opacity: 0.85;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.home .home-img img:hover{
+    opacity: 1;
+}
+.home .home-img img:active{
+    scale: 1.1;
+}
+.Devolpers{
+    margin-top: 100px ;
+    height: 200vh;
+    width: 20%;
+    margin: 0 auto;
+}
+.ourgames{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+}
+.background3{
+    margin-top: 150px ;
+    padding-top: 100px ;
+    width: 100%;
+    background-size: cover;
+    padding-bottom: 200px ;
+}
+
+.ourgames .divcard{
+   
+    width: 300px;
+    height: 450px;
+    background-color: #081b29;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.ourgames .gamecard img{
+   width: 300px;
+   height: 300px;
+   opacity: 0.4;
+   transition: 0.7s;
+}
+.ourgames .gamecard h3{
+    font-size: 40px;
+    color: aqua;
+    transition: 0.3s;
+}
+.gamecard{
+    margin-bottom: 100px ;
+}
+@media (max-width:1000px){
+    .ourgames{
+        flex-wrap: wrap;
+         justify-content: center;
+    }
+    .gamecard{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width:800px){
+    .spanbar{
+        display: none;
+    }
+    .logo img{
+        width: 80px;
+        height:  80px;
+    }
+    .container{
+     height: 100px;
+    }
+    .header{
+        height: 100px ;
+    }
+}
+@media (max-width:800px){
+  .home{
+    flex-wrap: wrap;
+    height: 200vh;
+    justify-content: center  ;
+    padding-bottom: 100px ;
+    margin-left: auto ;
+    margin-right: auto ;
+  }
+  .links{
+    display: none;
+  }
+  .home .home-content{
+    width: 100%;
+    margin-bottom:0px; 
+  }
+  .home .home-img{
+   margin-top: 0;
+  }
+.ourgames{
+    flex-wrap: wrap;
+    justify-content: center ;
+}
+.devcard{
+    flex-wrap: wrap;
+
+}
+.devcard .par{
+    min-width: 100% ;
+    margin-bottom: 50px ;
+}
+.title{
+    font-size: 14px ;
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+.spanbar{
+    display: block;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+.header{
+    height: 80px ;
+}
+.footer{
+    height: 400px ;
+}
+.video video{
+    min-width: 100%;
+    border: none;
+}
+.video .thevideo::before,
+.slide1,
+.slide2,
+.video::before
+{
+    display: none;
+}
+
+}
+.ourgames .gamecard:hover h3{
+    color: orange;
+}
+.ourgames .gamecard:hover img{
+    opacity: 1;
+}
+.ourgames .gamecard .divcard:hover p{
+    color: aqua;
+}
+.ourgames .gamecard .divcard p{
+ font-size: 23px;
+ color: wheat ;
+}
+a{
+    text-decoration: none;
+}
+.devolpers{
+    width: 90%;
+    margin: 0 auto 100px auto ;
+}
+.devolpers .devcard{
+    display: flex;
+    align-items: center ;
+    text-align: center ;
+    margin-bottom: 100px ;
+}
+
+.devolpers .devcard img{
+    width: 250px;
+    height: 270px ;
+    border-radius: 100%;
+    margin-right: 30px ;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+}
+.devolpers .devcard img:hover{
+ opacity: 1;
+}
+.devolpers .devcard img:active{
+    scale: 1.1;
+}
+.devcard .par{
+    width: 30%;
+}
+#one,
+#three{
+    justify-content: end;
+    /* there is a preporty reverse the items  */
+}
+
+footer{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    background-image: url(/pics/colors.jpg) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px ;
+    color: aqua;
+    text-shadow:2px 2px 2px black ;
+}
+.item span img{
+    width: 40px ;
+    height: 40px ;
+    margin-left: 70px ;
+    transition: 0.8s;
+    cursor: pointer;
+}
+.background2{
+    width: 100%;
+    margin-top: 120px ;
+    background-size: cover;
+    padding: 50px 0;
+}
+.title:active{
+    padding: 5px ;
+}
+html{
+    height: 1349px ;
+}
+::selection{
+    background-color: #081b2968;
+    color: rgba(255, 166, 0, 0.566);
+}
+.spanbar{
+    width: 45px;
+    margin: auto;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    direction: rtl;
+    /* i must reverse the spans */
+}
+.spanbar span:not(:nth-child(2)){
+    display: block;
+    margin-bottom: 6px ;
+    width: 100%;
+    height: 6px;
+    background-color: rgba(255, 166, 0, 0.433);
+}
+.spanbar span:nth-child(2){
+    display: block;
+    margin-bottom: 6px ;
+    cursor: pointer;
+    width: 40%;
+    height: 6px;
+    background-color: orange;
+    transition: 0.5s;
+}
+.spanbar:hover span:nth-child(2){
+    width: 100%;
+}
+.bar{
+    position: absolute;
+    right: 0px;
+    top: 65px;
+    background-color: #081b2982;
+    padding: 0px ;
+    border-radius: 10px;
+    height: 0px;
+    width: 0px ;
+    transition: 0.2s;
+}
+.bar li{
+    font-size: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+    display: none;
+    padding: 4px 10px ;
+    width: 180px ;
+    text-align: center ;
+    transition: 0.3s;
+}
+.bar li:not(:last-child){
+    border-bottom: 2px black solid ;
+}
+.bar::before{
+    content: '';
+    border: 10px  solid ;
+    border-color:  transparent transparent 
+    #081b2982 transparent;
+    position: absolute;
+    top: -20px;
+    right: 15px;
+    display: none;
+}
+.spanbar:hover .bar{
+ height: fit-content;
+ width: fit-content;
+
+}
+.spanbar:hover li{
+ display: block;
+}
+.spanbar:hover .bar::before{
+    display: block;
+}
+.bar li:hover{
+    padding-left: 1px;
+    color: aqua;
+    text-shadow: 2px 2px 2px black;
+}
+.Getstarted{
+    margin: 0px auto;
+}
+.h2get{
+    border: 2px orange solid;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 20px;
+    color: orange;
+    cursor: pointer;
+}
+.video video{
+    width: 80%;
+    border-bottom: 15px orange solid ;
+    box-shadow: 0px 19px 30px black;
+    border-bottom-left-radius: 15px ;
+    border-bottom-right-radius: 15px ;
+    position: relative;
+    transition: 1s ease;
+    box-sizing: unset;
+}
+.video{
+    margin: 100px auto 200px auto ;
+    position: relative;
+}
+.video::before{
+    content: '';
+    float: left;
+    width: 80%;
+    height: 20px;
+    z-index: 100;
+    position: absolute;
+    background-color: orange;
+    bottom: -100px;
+    left: 10%;
+}
+.slide1{
+    position: absolute;
+    border: 100px solid;
+    border-color: transparent transparent #081b29 transparent;
+    bottom: -99px;
+    left: 15%;
+    transition: 1s;
+    border-radius: 100%;
+}
+.slide2{
+    width: 35px;
+    height: 99px;
+    position: absolute;
+    border: 100px solid;
+    border-color: transparent transparent #081b29 transparent;
+    bottom: -99px;
+    right: 15%;
+    transition: 1s;
+    border-radius: 100%;
+}
+.video:hover .slide1{
+ left: 30%;
+}
+.video:hover .slide2{
+    right: 30%;
+}
+.video .thevideo{
+    width: 80%;
+}
+.video .thevideo::before{
+    content: "This is some text";
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    transition: 1s;
+    left: 20%;
+    background: #081b29;
+    border: 10px orange solid;
+    box-sizing: border-box;
+}
+.video .thevideo:hover::before{
+    left: 0 ;
+}
+.header .links li::before{
+    content: '';
+    width: 0% ;
+    height:2px ;
+    background-color: aqua;
+    position: absolute;
+    bottom: -3px;
+    transition: 0.5s;
+}
+.header .links li:hover::before{
+    width: 100%;
+}
+.Getstarted{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #00008b7a;
+    border: 2px orange solid;
+    border-radius: 33px;
+    color: orange;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+.Getstarted::after{
+    content: '';
+    background-color: rgba(255, 166, 0, 0);
+    width: 0%;
+    height: 100%;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: 1s;
+}
+.Getstarted h1{
+    position: relative;
+    z-index: 3;
+}
+.Getstarted:hover::after{
+    width: 80%;
+    background-color: rgba(255, 166, 0, 0.557);
+}
+.Getstarted:hover{
+    color: darkblue;
+}
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+  }
+  
